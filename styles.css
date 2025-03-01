@@ -39,9 +39,6 @@ p {
   font-size: 20px;
 }
 
-.container > .vocab {
-  background-color: rgba(255, 255, 255, 0.8);
+.vocab {
   text-align: left;
-  padding: 20px 0;
-  font-size: 20px;
 }
