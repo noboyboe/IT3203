@@ -4,7 +4,6 @@ body {
 
 h1 {
   color: blue;
-  text-align: center;
 }
 
 p {
@@ -21,7 +20,7 @@ p {
   padding: 10px;
 }
 
-.grid-container > div {
+.container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
