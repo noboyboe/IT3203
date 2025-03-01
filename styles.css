@@ -27,9 +27,9 @@ p {
     "content content content content content"
     "vocab vocab vocab vocab vocab";
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
+  grid-gap: 5px;
   background-color: #2196F3;
-  padding: 10px;
+  padding: 8px;
 }
 
 .container > div {
