@@ -24,6 +24,7 @@ p {
     "header header header header header"
     "tab1 tab2 tab3 tab4 tab5"
     "content content content content content";
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
