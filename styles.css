@@ -14,7 +14,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-areas: "header header . . .";
+  grid-template-areas: "header header header header";
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
