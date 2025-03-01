@@ -14,7 +14,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-areas: "header header header header";
+  grid-template-areas: "header";
   grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
@@ -24,6 +24,6 @@ p {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
 }
 
