@@ -44,36 +44,46 @@ p {
 }
 
 .container > div.tab1 {
+  border: 1px solid black;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  background-color: lightblue;
 }
 
 .container > div.tab2 {
+  border: 1px solid black;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  background-color: lightblue;
 }
 
 .container > div.tab3 {
+  border: 1px solid black;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  background-color: lightblue;
 }
 
 .container > div.tab4 {
+  border: 1px solid black;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  background-color: lightblue;
 }
 
 .container > div.tab5 {
+  border: 1px solid black;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 15px;
   margin-left: 15px;
+  background-color: lightblue;
 }
