@@ -11,6 +11,7 @@ p {
 }
 
 .item1 { grid-area: header; }
+.item2 { grid-area: content; }
 
 .container {
   display: grid;
