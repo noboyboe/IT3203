@@ -1,9 +1,23 @@
 body {
   background-color: powderblue;
 }
+
 h1 {
   color: blue;
 }
+
 p {
   color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "menu menu content content content"
+    "footer footer footer footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: white
+  padding: 5px;
 }
