@@ -41,4 +41,8 @@ p {
 
 .container > div.vocab {
   text-align: left
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
