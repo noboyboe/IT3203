@@ -11,12 +11,18 @@ p {
 }
 
 .item1 { grid-area: header; }
-.item2 { grid-area: content; }
+.item2 { grid-area: tab1; }
+.item3 { grid-area: tab2; }
+.item4 { grid-area: tab3; }
+.item5 { grid-area: tab4; }
+.item6 { grid-area: tab5; }
+.item7 { grid-area: content; }
 
 .container {
   display: grid;
   grid-template-areas: 
     "header"
+    "tab1 tab2 tab3 tab4 tab5"
     "content";
   grid-gap: 10px;
   background-color: #2196F3;
