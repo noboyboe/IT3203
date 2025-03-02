@@ -52,7 +52,7 @@ a:active {
   grid-template-columns: repeat(5, 1fr);
   font-family: "Lucida Console", "Courier New", monospace;
   grid-gap: 3px;
-  background-color: #2196F3;
+  background-color: black;
   padding: 8px;
 }
 
