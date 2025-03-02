@@ -10,8 +10,20 @@ p {
   color: red;
 }
 
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
 a:hover {
-  background-color: yellow;
+  color: orange;
+}
+
+a:active {
+  color: yellow;
 }
 
 .item1 { grid-area: header; }
