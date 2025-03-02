@@ -11,15 +11,15 @@ p {
 }
 
 a:link {
-  color: blue;
+  color: black;
 }
 
 a:visited {
-  color: red;
+  color: white;
 }
 
 a:hover {
-  color: orange;
+  color: gray;
 }
 
 a:active {
