@@ -76,6 +76,6 @@ a:active {
   background-color: #F0FFFF;
 }
 
-.item9 table {
+.container > div.table {
   border:1px solid black;
 }
