@@ -45,6 +45,7 @@ p {
 
 .footer {
   border: 1px solid black;
+  text-align: center;
   margin: 10px;
   background-color: #F0FFFF;
 }
