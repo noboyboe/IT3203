@@ -43,11 +43,11 @@ p {
   text-align: left
 }
 
-.container > div.content {
+.footer {
   border: 1px solid black;
   margin-top: 100px;
-  margin-bottom: 200px;
-  margin-right: 10px;
+  margin-bottom: 100px;
+  margin-right: 150px;
   margin-left: 80px;
   background-color: lightblue;
 }
