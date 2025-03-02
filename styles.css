@@ -47,8 +47,8 @@ a:active {
   grid-template-areas: 
     "header header header header header"
     "tab1 tab2 tab3 tab4 tab5"
-    "table table table table table"
     "content content content content content"
+    "table table table table table"
     "vocab vocab vocab vocab vocab";
   grid-template-columns: repeat(5, 1fr);
   font-family: "Lucida Console", "Courier New", monospace;
@@ -74,4 +74,8 @@ a:active {
   text-align: center;
   margin: 10px;
   background-color: #F0FFFF;
+}
+
+.container > div.table {
+  border:1px solid black;
 }
