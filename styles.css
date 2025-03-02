@@ -41,7 +41,7 @@ a:active {
 .item6 { grid-area: tab5; }
 .item7 { grid-area: content; }
 .item8 { grid-area: vocab; }
-.item9 {grid-area: table; }
+.item9 { grid-area: table; }
 .container {
   display: grid;
   grid-template-areas: 
