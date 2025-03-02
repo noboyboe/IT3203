@@ -76,7 +76,7 @@ a:active {
   background-color: #F0FFFF;
 }
 
-.table th, .table td {
+.container > div.table {
   width:100%;
   border:1px solid black;
 }
