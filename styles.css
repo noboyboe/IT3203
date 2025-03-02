@@ -30,7 +30,7 @@ a:hover {
 }
 
 a:active {
-  color: yellow;
+  color: red;
 }
 
 .item1 { grid-area: header; }
