@@ -4,10 +4,12 @@ body {
 
 h1 {
   color: blue;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 p {
   color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 a:link {
