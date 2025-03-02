@@ -41,12 +41,13 @@ a:active {
 .item6 { grid-area: tab5; }
 .item7 { grid-area: content; }
 .item8 { grid-area: vocab; }
-
+.item9 {grid-area: table; }
 .container {
   display: grid;
   grid-template-areas: 
     "header header header header header"
     "tab1 tab2 tab3 tab4 tab5"
+    "table table table table table"
     "content content content content content"
     "vocab vocab vocab vocab vocab";
   grid-template-columns: repeat(5, 1fr);
