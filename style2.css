@@ -71,6 +71,8 @@ p {
 }
 
 .table table, .table th, .table td {
+  margin-left: auto;
+  margin-right: auto;
   width:60%;
   border:1px solid black;
 }
