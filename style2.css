@@ -17,13 +17,14 @@ body {
   height: 100%;  
   max-width: 800px;
   text-align: center;
+  padding-top: 90px;
 }
 
 h1 {
   text-align: center;
   color: black;
   font-family: "Lucida Console", "Courier New", monospace;
-  margin: 2
+  margin: 0;
 }
 
 p {
