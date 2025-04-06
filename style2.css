@@ -37,11 +37,11 @@ body {
   cursor: pointer;
 }
 
-.tabbut button: hover {
+.tabbut:hover {
   background-color: #DCDCDC
 }
 
-.tabbut button.active {
+.tabbut.active {
   background-color: #696969
 }
 
