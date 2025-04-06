@@ -21,6 +21,9 @@ body {
 }
 
 h1 {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
   margin: 0
 }
 
