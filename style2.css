@@ -9,7 +9,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: powderblue;
+  background-image: url('skybox.png');
+  background-size: cover; 
+  background-position: center center; 
   display: flex;
   justify-content: center;
   align-items: center;
