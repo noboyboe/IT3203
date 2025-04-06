@@ -84,7 +84,7 @@ function checkAnswers() {
   let totalQuestions = 5;
   let answer = ' ';
 
-  let q1 = document.querySelector('input[name="q1":checked');
+  let q1 = document.querySelector('input[name="q1"]:checked');
   if (q1 && q1.value === 'b') {
     score++; 
     answer +='<p>Correct.</p>';
@@ -92,7 +92,7 @@ function checkAnswers() {
     answer += '<p>Incorrect. The correct answer is B.</p>';
   }
 
-    let q2 = document.querySelector('input[name="q2":checked');
+    let q2 = document.querySelector('input[name="q2"]:checked');
   if (q2 && q2.value === 'd') {
     score++; 
     answer +='<p>Correct.</p>';
@@ -100,8 +100,8 @@ function checkAnswers() {
     answer += '<p>Incorrect. The correct answer is D.</p>';
   }
 
-  let q3 = document.querySelector('input[name="q2"}').value.trim();
-  if q3.toLowerCase() === '1989') {
+  let q3 = document.querySelector('input[name="q2"]').value.trim();
+  if (q3.toLowerCase() === '1989') {
     score++;
     answer += '<p>Correct.</p>';
   } else {
@@ -130,17 +130,17 @@ function checkAnswers() {
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
 
   document.getElementById('score').innerText = score;
-  document.getElementById('answers').innerHTML = answer;
+  document.getElementById('answer').innerHTML = answer;
   document.getElementById('finalScore').innerText = `${finalScore}`;
   document.getElementById('result').style.display = 'block';
-  document.getElementById('quizForm').style.display = 'none';
+  document.getElementById('shortQuiz').style.display = 'none';
 
 }
 
 function restartQuiz() {
-    document.getElementById('quizForm').reset();
+    document.getElementById('shortQuiz').reset();
     document.getElementById('result').style.display = 'none';
-    document.getElementById('quizForm').style.display = 'block';
+    document.getElementById('shortQuiz').style.display = 'block';
 }
 
 </script>
