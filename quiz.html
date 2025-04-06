@@ -87,25 +87,25 @@ function checkAnswers() {
   let q1 = document.querySelector('input[name="q1"]:checked');
   if (q1 && q1.value === 'b') {
     score++; 
-    answer +='<p>Correct.</p>';
+    answer +='<p>1)Correct.</p>';
   } else {
-    answer += '<p>Incorrect. The correct answer is B.</p>';
+    answer += '<p>1)Incorrect. The correct answer is B.</p>';
   }
 
     let q2 = document.querySelector('input[name="q2"]:checked');
   if (q2 && q2.value === 'd') {
     score++; 
-    answer +='<p>Correct.</p>';
+    answer +='<p>2)Correct.</p>';
   } else {
-    answer += '<p>Incorrect. The correct answer is D.</p>';
+    answer += '<p>2)Incorrect. The correct answer is D.</p>';
   }
 
   let q3 = document.querySelector('input[name="q3"]').value.trim();
   if (q3.toLowerCase() === '1989') {
     score++;
-    answer += '<p>Correct.</p>';
+    answer += '<p>3)Correct.</p>';
   } else {
-    answer += '<p>Incorrect. Web 1.0 began in 1989.</p>';
+    answer += '<p>3)Incorrect. Web 1.0 began in 1989.</p>';
   }
   
   let q4 = [];
@@ -114,17 +114,17 @@ function checkAnswers() {
     });
     if (q4.includes('a') && q4.includes('b')) {
       score++;
-      answer += '<p>Correct.</p>';
+      answer += '<p>4)Correct.</p>';
     } else {
-      answer += '<p>Incorrect. The answers are A and B.</p>';
+      answer += '<p>4)Incorrect. The answers are A and B.</p>';
     }
 
   let q5 = document.querySelector('input[name="q5"]:checked');
     if (q5 && q5.value === 'c') {
       score++; 
-      answer +='<p>Correct.</p>';
+      answer +='<p>5)Correct.</p>';
     } else {
-      answer += '<p>Incorrect. The correct answer is C.</p>';
+      answer += '<p>5)Incorrect. The correct answer is C.</p>';
     }
 
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
