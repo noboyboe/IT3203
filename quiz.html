@@ -68,8 +68,74 @@
     <div class="footer">
       <p><b>Created by David Dinh</b></p>
     </div>
+
+     <div id="result" style="display:none;">
+            <h2>Your Score: <span id="score"></span>/5</h2>
+            <div id="answers"></div>
+            <p id="resultMessage"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+      </div>
     
  </div>
 
+<script>
+function checkAnswers() {
+  let score = 0;
+  let totalQuestions = 5;
+  let answer = ' ';
+
+  let q1 = document.querySelector('input[name="q1":checked');
+  if (q1 && q1.value === 'b') {
+    score++; 
+    answer +='<p>Correct.</p>';
+  } else {
+    answer += '<p>Incorrect. The correct answer is B.</p>';
+  }
+
+    let q2 = document.querySelector('input[name="q2":checked');
+  if (q2 && q2.value === 'd') {
+    score++; 
+    answer +='<p>Correct.</p>';
+  } else {
+    answer += '<p>Incorrect. The correct answer is D.</p>';
+  }
+
+  let q3 = document.querySelector('input[name="q2"}').value.trim();
+  if q3.toLowerCase() === '1989') {
+    score++;
+    answer += '<p>Correct.</p>';
+  } else {
+    answer += '<p>Incorrect. Web 1.0 began in 1989.</p>';
+  }
+  
+  let q4 = [];
+    document.querySelectorAll('input[name="q4"]:checked').forEach((checkbox) => {
+      q4.push(checkbox.value);
+    });
+    if (q4.includes('a') && q4.includes('b')) {
+      score++;
+      answer += '<p>Correct.</p>';
+    } else {
+      answer += '<p>Incorrect. The answers are A and B.</p>';
+    }
+
+  let q5 = document.querySelector('input[name="q5":checked');
+    if (q5 && q5.value === 'c') {
+      score++; 
+      answer +='<p>Correct.</p>';
+    } else {
+      answer += '<p>Incorrect. The correct answer is C.</p>';
+    }
+
+  let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
+
+  document.getElementById('score').innerText = score;
+  document.getElementById('answers').innerHTML = answer;
+  document.getElementById('finalScore').innerText = `${finalScore}`;
+}
+
+
+</script>
+  
 </body>
 </html>
