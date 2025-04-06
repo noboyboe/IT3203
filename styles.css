@@ -1,5 +1,6 @@
 body {
   background-color: powderblue;
+  background-image: url('skybox.png')
 }
 
 h1 {
