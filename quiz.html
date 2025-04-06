@@ -132,11 +132,15 @@ function checkAnswers() {
   document.getElementById('score').innerText = score;
   document.getElementById('answers').innerHTML = answer;
   document.getElementById('finalScore').innerText = `${finalScore}`;
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('quizForm').style.display = 'none';
 
 }
 
 function restartQuiz() {
     document.getElementById('quizForm').reset();
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('quizForm').style.display = 'block';
 }
 
 </script>
