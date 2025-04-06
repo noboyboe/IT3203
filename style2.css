@@ -27,6 +27,18 @@ body {
   padding-top: 0px;
 }
 
+.tabbut {
+  background-color: AliceBlue;
+}
+
+.tabbut button: hover {
+  background-color: #DCDCDC
+}
+
+.tabbut button.active {
+  backgroud-color: #696969
+}
+
 h1 {
   text-align: center;
   color: black;
