@@ -34,12 +34,11 @@ body {
   transition: 0.3s;
   font-size: 17px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .tabbut button: hover {
   background-color: #DCDCDC
-
-  color: white;
 }
 
 .tabbut button.active {
