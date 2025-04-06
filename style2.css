@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 120vh;
   background-image: url('skybox.png');
   background-size: cover; 
   background-position: center center; 
@@ -23,7 +23,7 @@ body {
   padding: 0px;
   border-radius: 0px;
   width: 80%;  
-  height: 150%;  
+  height: 100%;  
   max-width: 1400px;
   text-align: center;
   padding-top: 0px;
