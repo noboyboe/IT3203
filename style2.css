@@ -58,3 +58,19 @@ h1 {
 p {
   font-size: 1
 }
+
+.vocab {
+  text-align: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.footer {
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  background-color: #F0FFFF;
+}
+
+.table table, .table th, .table td {
+  width:100%;
+  border:1px solid black;
+}
