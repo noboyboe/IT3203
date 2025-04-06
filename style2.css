@@ -27,26 +27,26 @@ body {
   padding-top: 0px;
 }
 
- .tabs {
-    background-color: #666699; 
-    padding: 0px; 
-    text-align: center;
-  }
+.tabs {
+  background-color: #666699; 
+  padding: 0px; 
+  text-align: center;
+}
 
-  .tabbut {
-    background-color: #666699;
-    border: none;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    margin: 1px;
-    cursor: pointer;
-    color: white;
-  }
+.tabbut {
+  background-color: #666699;
+  border: none;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 1px;
+  cursor: pointer;
+  color: white;
+}
 
-  .tabbut:hover {
-    background-color: #9999ff;
-  }
+.tabbut:hover {
+  background-color: #9999ff;
+}
 
 h1 {
   text-align: center;
