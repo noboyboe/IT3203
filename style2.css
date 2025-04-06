@@ -1,7 +1,5 @@
 .header {
-  background-image: url('city.jpg');
-  background-size: cover; 
-  background-position: center center; 
+  background-color: skyblue;
   padding: 30px;
   border-radius: 0px;
   text-align: center;
