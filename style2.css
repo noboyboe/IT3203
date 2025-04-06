@@ -71,6 +71,7 @@ p {
   text-align: center;
   margin: 10px;
   background-color: #F0FFFF;
+  vertical-align: text-bottom;
 }
 
 .table table, .table th, .table td {
