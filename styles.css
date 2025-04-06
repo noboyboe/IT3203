@@ -43,11 +43,12 @@ a:active {
 .item7 { grid-area: content; }
 .item8 { grid-area: vocab; }
 .item9 { grid-area: table; }
+.item10 { grid-area: tab6; }
 .container {
   display: grid;
   grid-template-areas: 
     "header header header header header"
-    "tab1 tab2 tab3 tab4 tab5"
+    "tab1 tab2 tab3 tab4 tab6 tab5"
     "content content content content content"
     "table table table table table"
     "vocab vocab vocab vocab vocab";
