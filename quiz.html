@@ -27,6 +27,7 @@
     <p>There are a total of 5 questions on this quiz. Good luck. :3</p>
     
     <form id="shortQuiz">
+      <form id="reveal">
        <div class="lefty">
           <p>1) What does 'WWW' stand for?</p>
           <label><input type="radio" name="q1" value= "a">A) World War Won</label><br>
@@ -34,6 +35,7 @@
           <label><input type="radio" name="q1" value= "c">C) Whole Wide World</label><br>
           <label><input type="radio" name="q1" value= "d">D) Who What Where</label><br>
         </div>
+         <div id="answer1"></div>
       
       <div class="lefty">
           <p>2) What exactly does HTML (HyperText Markup Language) do?</p>
@@ -42,11 +44,13 @@
           <label><input type="radio" name="q2" value= "c">C) A protocol that connects a commuter to a world-wide network of networks.</label><br>
           <label><input type="radio" name="q2" value= "d">D) It is used to create and publish static web pages and web applications.</label><br>
         </div>
+        <div id="answer2"></div>
   
       <div class="lefty">
           <p>3) Web 1.0 begain in the year ____.</p>
           <input type="text" name="q3">
         </div>
+        <div id="answer3"></div>
     
       <div class="lefty">
           <p>4) What did Web 3.0 introduce?</p>
@@ -55,6 +59,7 @@
           <label><input type="checkbox" name="q4" value="c"> C) HTML and HTTP</label><br>
           <label><input type="checkbox" name="q4" value="d"> D) The Internet</label><br>
       </div>
+        <div id="answer4"></div>
     
       <div class="lefty">
         <p>5) What is a "static page"?</p>
@@ -63,19 +68,20 @@
         <label><input type="radio" name="q5" value= "c">C) When viewing a website, the page does not ever change.</label><br>
         <label><input type="radio" name="q5" value= "d">D) An AI that helps users look for information more quickly.</label><br>
       </div>
+        <div id="answer5"></div>
       <br><button type="button" onclick="checkAnswers()">Submit</button>
+      </form>
     </form>
-    <div class="footer">
-      <p><b>Created by David Dinh</b></p>
-    </div>
-
-     <div id="result" style="display:none;">
+      <div id="result" style="display:none;">
             <h2>Your Score: <span id="score"></span>/5</h2>
             <div id="answer"></div>
             <p id="finalScore"></p>
             <button onclick="restartQuiz()">Restart Quiz</button>
       </div>
-    
+    <div class="footer">
+      <p><b>Created by David Dinh</b></p>
+    </div>
+
  </div>
 
 <script>
@@ -87,25 +93,25 @@ function checkAnswers() {
   let q1 = document.querySelector('input[name="q1"]:checked');
   if (q1 && q1.value === 'b') {
     score++; 
-    answer +='<p>1)Correct.</p>';
+    answer1 +='<p>1)Correct.</p>';
   } else {
-    answer += '<p>1)Incorrect. The correct answer is B.</p>';
+    answer1 += '<p>1)Incorrect. The correct answer is B.</p>';
   }
 
     let q2 = document.querySelector('input[name="q2"]:checked');
   if (q2 && q2.value === 'd') {
     score++; 
-    answer +='<p>2)Correct.</p>';
+    answer2 +='<p>2)Correct.</p>';
   } else {
-    answer += '<p>2)Incorrect. The correct answer is D.</p>';
+    answer2 += '<p>2)Incorrect. The correct answer is D.</p>';
   }
 
   let q3 = document.querySelector('input[name="q3"]').value.trim();
   if (q3.toLowerCase() === '1989') {
     score++;
-    answer += '<p>3)Correct.</p>';
+    answer3 += '<p>3)Correct.</p>';
   } else {
-    answer += '<p>3)Incorrect. Web 1.0 began in 1989.</p>';
+    answer3 += '<p>3)Incorrect. Web 1.0 began in 1989.</p>';
   }
   
   let q4 = [];
@@ -114,26 +120,29 @@ function checkAnswers() {
     });
     if (q4.includes('a') && q4.includes('b')) {
       score++;
-      answer += '<p>4)Correct.</p>';
+      answer4 += '<p>4)Correct.</p>';
     } else {
-      answer += '<p>4)Incorrect. The answers are A and B.</p>';
+      answer4 += '<p>4)Incorrect. The answers are A and B.</p>';
     }
 
   let q5 = document.querySelector('input[name="q5"]:checked');
     if (q5 && q5.value === 'c') {
       score++; 
-      answer +='<p>5)Correct.</p>';
+      answer5 +='<p>5)Correct.</p>';
     } else {
-      answer += '<p>5)Incorrect. The correct answer is C.</p>';
+      answer5 += '<p>5)Incorrect. The correct answer is C.</p>';
     }
 
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
 
   document.getElementById('score').innerText = score;
-  document.getElementById('answer').innerHTML = answer;
+  document.getElementById('answer1').innerHTML = answer1;
+  document.getElementById('answer2').innerHTML = answer2;
+  document.getElementById('answer3').innerHTML = answer3;
+  document.getElementById('answer4').innerHTML = answer4;
+  document.getElementById('answer5').innerHTML = answer5;
   document.getElementById('finalScore').innerText = `${finalScore}`;
   document.getElementById('result').style.display = 'block';
-  document.getElementById('shortQuiz').style.display = 'none';
 
 }
 
