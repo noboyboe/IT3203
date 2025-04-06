@@ -62,6 +62,7 @@ p {
 .vocab {
   text-align: left;
   font-family: "Lucida Console", "Courier New", monospace;
+  padding-left: 20px;
 }
 .footer {
   border: 1px solid black;
