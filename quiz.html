@@ -3,7 +3,9 @@
 
 <head>
   <title>Evolution Of The Web</title>
+<!-- To revamp the website, I had to rewrite my CSS file and completely replace the content inside <div class="header"> -->
   <link rel="stylesheet" href="style2.css">
+<!-- This is a separate CSS file exclusively for the quiz section. It doesn't have much other than some text alignment for the answer reveals after you press submit. -->
   <link rel="stylesheet" href="quiz.css">
 </head>
 
@@ -11,6 +13,8 @@
 
   <div class="content">
     <div class="header">
+      <!-- Every single file will always start off with the usual code because the menu is required to remain consistent throughout the website. -->
+  <!-- The entire main content is all within "content" -->
       <h1><img src="web.png" alt="web image" width="50" height="50"> Evolution Of The Web</h1>
       <p>Quiz</p>
     </div>
@@ -22,11 +26,12 @@
       <button class="tabbut" onclick="window.location.href='https://noboyboe.github.io/IT3203/quiz.html';">Quiz</button>
       <button class="tabbut" onclick="window.location.href='https://noboyboe.github.io/IT3203/reference.html';">References</button>
     </div>
-
+  <!-- This states what the page is and how many questions are on the quiz. -->
     <h1>Web Evolution Quiz</h1>
     <p>There are a total of 5 questions on this quiz. Good luck. :3</p>
-    
+      <!-- All of the questions are coded within "shortQuiz". -->
     <form id="shortQuiz">
+        <!-- <div class="lefty"> realigns the all the text to the left. -->
        <div class="lefty">
           <p>1) What does 'WWW' stand for?</p>
           <label><input type="radio" name="q1" value= "a">A) World War Won</label><br>
@@ -44,13 +49,13 @@
           <label><input type="radio" name="q2" value= "d">D) It is used to create and publish static web pages and web applications.</label><br>
         </div>
         <div id="answer2"></div>
-  
+    <!-- This is a question where you need to type in the answer -->
       <div class="lefty">
           <p>3) Web 1.0 begain in the year ____.</p>
           <input type="text" name="q3">
         </div>
         <div id="answer3"></div>
-    
+      <!-- This is a checkbox question where you need to click on multiple answers. -->
       <div class="lefty">
           <p>4) What did Web 3.0 introduce?</p>
           <label><input type="checkbox" name="q4" value="a"> A) An intelligent web that links pieces of data for a more intuitive browser experience.</label><br>
@@ -68,12 +73,14 @@
         <label><input type="radio" name="q5" value= "d">D) An AI that helps users look for information more quickly.</label><br>
       </div>
         <div id="answer5"></div>
+        <!-- Pressing the submit button will reveal all of the answers and whether you got them correct or incorrect. -->
       <div id="subbut"><button type="button" onclick="checkAnswers()">Submit</button></div>
     </form>
       <div id="result" style="display:none;">
             <h2>Your Score: <span id="score"></span>/5</h2>
             <div id="answer"></div>
             <p id="finalScore"></p>
+          <!-- This restarts your quiz and hides the revealed answers. -->
             <button onclick="restartQuiz()">Restart Quiz</button>
       </div>
     <div class="footer">
@@ -81,7 +88,10 @@
     </div>
 
  </div>
-
+  <!-- The function checks if you click on the correct answer. If you do get one correct, it will add 0.2 points to the variable "score". If you don't get a question correct, it will add nothing. -->
+  <!-- I had some trouble trying to display the answers after pressing the submit button. This is my first time using JavaScript in general as I've always used Python in the past. -->
+  <!-- The revealed answers would not display properly. Instead of putting all the revealed answers in one variable, I put them all separately in different variables. There's definitely some redundancy but- -->
+  <!-- as a first time user of JavaScript I think it will do for now. -->
 <script>
 function checkAnswers() {
   let score = 0;
