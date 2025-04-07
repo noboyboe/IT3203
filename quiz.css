@@ -5,3 +5,10 @@ div.lefty {
   padding-left: 25px;
   margin: 1;
 }
+
+#answer1, #answer2, #answer3, #answer4, #answer5 {
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 5px
+  margin-bottom: 5px
+}
