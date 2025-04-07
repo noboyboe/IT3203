@@ -27,7 +27,6 @@
     <p>There are a total of 5 questions on this quiz. Good luck. :3</p>
     
     <form id="shortQuiz">
-      <form id="reveal">
        <div class="lefty">
           <p>1) What does 'WWW' stand for?</p>
           <label><input type="radio" name="q1" value= "a">A) World War Won</label><br>
@@ -70,7 +69,6 @@
       </div>
         <div id="answer5"></div>
       <br><button type="button" onclick="checkAnswers()">Submit</button>
-      </form>
     </form>
       <div id="result" style="display:none;">
             <h2>Your Score: <span id="score"></span>/5</h2>
@@ -143,6 +141,12 @@ function checkAnswers() {
   document.getElementById('answer5').innerHTML = answer5;
   document.getElementById('finalScore').innerText = `${finalScore}`;
   document.getElementById('result').style.display = 'block';
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('answer1').style.display = 'block';
+  document.getElementById('answer2').style.display = 'block';
+  document.getElementById('answer3').style.display = 'block';
+  document.getElementById('answer4').style.display = 'block';
+  document.getElementById('answer5').style.display = 'block';
 
 }
 
@@ -150,6 +154,11 @@ function restartQuiz() {
     document.getElementById('shortQuiz').reset();
     document.getElementById('result').style.display = 'none';
     document.getElementById('shortQuiz').style.display = 'block';
+    document.getElementById('answer1').style.display = 'none';
+    document.getElementById('answer2').style.display = 'none';
+    document.getElementById('answer3').style.display = 'none';
+    document.getElementById('answer4').style.display = 'none';
+    document.getElementById('answer5').style.display = 'none';
 }
 
 </script>
