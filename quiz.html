@@ -120,7 +120,7 @@ function checkAnswers() {
       score++;
       answer4 = '4)Correct.';
     } else {
-      answer4 = '<p>4)Incorrect. The answers are A and B.';
+      answer4 = '4)Incorrect. The answers are A and B.';
     }
 
   let q5 = document.querySelector('input[name="q5"]:checked');
@@ -128,7 +128,7 @@ function checkAnswers() {
       score++; 
       answer5 ='5)Correct.';
     } else {
-      answer5 = '<p>5)Incorrect. The correct answer is C.';
+      answer5 = '5)Incorrect. The correct answer is C.';
     }
 
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
