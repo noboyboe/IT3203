@@ -134,13 +134,21 @@ function checkAnswers() {
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
 
   document.getElementById('score').innerText = score;
-  document.getElementById('answer1').innerHTML = answer1;
-  document.getElementById('answer2').innerHTML = answer2;
-  document.getElementById('answer3').innerHTML = answer3;
-  document.getElementById('answer4').innerHTML = answer4;
-  document.getElementById('answer5').innerHTML = answer5;
+  document.getElementById('answer1').innerText = answer1;
+  document.getElementById('answer2').innerText = answer2;
+  document.getElementById('answer3').innerText = answer3;
+  document.getElementById('answer4').innerText = answer4;
+  document.getElementById('answer5').innerText = answer5;
+  
   document.getElementById('finalScore').innerText = `${finalScore}`;
+  document.getElementById('result').style.display = 'block';
   document.getElementById('subbut').style.display = 'none';
+  
+  document.getElementById('answer1').style.display = 'block';
+  document.getElementById('answer2').style.display = 'block';
+  document.getElementById('answer3').style.display = 'block';
+  document.getElementById('answer4').style.display = 'block';
+  document.getElementById('answer5').style.display = 'block';
 
 }
 
@@ -149,6 +157,7 @@ function restartQuiz() {
     document.getElementById('result').style.display = 'none';
     document.getElementById('shortQuiz').style.display = 'block';
     document.getElementById('subbut').style.display = 'block';
+    
     document.getElementById('answer1').style.display = 'none';
     document.getElementById('answer2').style.display = 'none';
     document.getElementById('answer3').style.display = 'none';
