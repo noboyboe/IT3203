@@ -39,8 +39,7 @@
           <label><input type="radio" name="q1" value= "c">C) Whole Wide World</label><br>
           <label><input type="radio" name="q1" value= "d">D) Who What Where</label><br>
         </div>
-         <div id="answer1"></div>
-      
+
       <div class="lefty">
           <p>2) What exactly does HTML (HyperText Markup Language) do?</p>
           <label><input type="radio" name="q2" value= "a">A) Creates a more intelligent web by linking other pieces of data in order to give the user a more intuitive experience as they look for information on the browser.</label><br>
@@ -48,13 +47,11 @@
           <label><input type="radio" name="q2" value= "c">C) A protocol that connects a commuter to a world-wide network of networks.</label><br>
           <label><input type="radio" name="q2" value= "d">D) It is used to create and publish static web pages and web applications.</label><br>
         </div>
-        <div id="answer2"></div>
     <!-- This is a question where you need to type in the answer -->
       <div class="lefty">
           <p>3) Web 1.0 begain in the year ____.</p>
           <input type="text" name="q3">
         </div>
-        <div id="answer3"></div>
       <!-- This is a checkbox question where you need to click on multiple answers. -->
       <div class="lefty">
           <p>4) What did Web 3.0 introduce?</p>
@@ -72,7 +69,6 @@
         <label><input type="radio" name="q5" value= "c">C) When viewing a website, the page does not ever change.</label><br>
         <label><input type="radio" name="q5" value= "d">D) An AI that helps users look for information more quickly.</label><br>
       </div>
-        <div id="answer5"></div>
         <!-- Pressing the submit button will reveal all of the answers and whether you got them correct or incorrect. -->
       <div id="subbut"><button type="button" onclick="checkAnswers()">Submit</button></div>
     </form>
@@ -82,6 +78,12 @@
             <p id="finalScore"></p>
           <!-- This restarts your quiz and hides the revealed answers. -->
             <button onclick="restartQuiz()">Restart Quiz</button>
+
+             <div id="answer1"></div>
+             <div id="answer2"></div>
+             <div id="answer3"></div>
+             <div id="answer4"></div>
+             <div id="answer5"></div>
       </div>
     <div class="footer">
       <p><b>Created by David Dinh</b></p>
@@ -100,25 +102,25 @@ function checkAnswers() {
   let q1 = document.querySelector('input[name="q1"]:checked');
   if (q1 && q1.value === 'b') {
     score++; 
-    answer1 ='Correct.';
+    answer1 ='1) Correct.';
   } else {
-    answer1 = 'Incorrect. The correct answer is B.';
+    answer1 = '1) Incorrect. The correct answer is B.';
   }
 
     let q2 = document.querySelector('input[name="q2"]:checked');
   if (q2 && q2.value === 'd') {
     score++; 
-    answer2 ='Correct.';
+    answer2 ='2) Correct.';
   } else {
-    answer2 = 'Incorrect. The correct answer is D.';
+    answer2 = '2) Incorrect. The correct answer is D.';
   }
 
   let q3 = document.querySelector('input[name="q3"]').value.trim();
   if (q3.toLowerCase() === '1989') {
     score++;
-    answer3 = 'Correct.';
+    answer3 = '3) Correct.';
   } else {
-    answer3 = 'Incorrect. Web 1.0 began in 1989.';
+    answer3 = '3) Incorrect. Web 1.0 began in 1989.';
   }
   
   let q4 = [];
@@ -127,17 +129,17 @@ function checkAnswers() {
     });
     if (q4.includes('a') && q4.includes('b')) {
       score++;
-      answer4 = 'Correct.';
+      answer4 = '4) Correct.';
     } else {
-      answer4 = 'Incorrect. The answers are A and B.';
+      answer4 = '4) Incorrect. The answers are A and B.';
     }
 
   let q5 = document.querySelector('input[name="q5"]:checked');
     if (q5 && q5.value === 'c') {
       score++; 
-      answer5 ='Correct.';
+      answer5 ='5) Correct.';
     } else {
-      answer5 = 'Incorrect. The correct answer is C.';
+      answer5 = '5) Incorrect. The correct answer is C.';
     }
 
   let finalScore = (score / totalQuestions) >= 0.7 ? 'You passed.' : 'You failed.';
