@@ -1,5 +1,7 @@
 .header {
   background-color: skyblue;
+  height: 100px; 
+  width: 80%;
   padding: 30px;
   border-radius: 0px;
   text-align: center;
