@@ -60,7 +60,7 @@ h1 {
 }
 
 p {
-  font-size: 2;
+  font-size: 16px;
 }
 
 .vocab {
@@ -81,5 +81,51 @@ p {
   margin-right: auto;
   width:60%;
   border:1px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .tabbut {
+    font-size: 14px;
+    padding: 10px 12px;
+    width: 100%; /* stack buttons vertically */
+    display: block;
+    margin: 5px 0;
+  }
+
+  .vocab {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .table table {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
