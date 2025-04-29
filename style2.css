@@ -82,3 +82,9 @@ p {
   width:60%;
   border:1px solid black;
 }
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
