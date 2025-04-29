@@ -30,6 +30,7 @@ body {
   text-align: center;
   padding-top: 0px;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .tabs {
@@ -88,6 +89,12 @@ p {
   box-sizing: border-box;
 }
 
+.result {
+  flex-grow: 1
+  overflow-y: auto;
+  padding: 10px
+  max-height: 100%
+}
 
 @media (max-width: 768px) {
   .header {
