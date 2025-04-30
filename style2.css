@@ -169,11 +169,14 @@ p {
   }
 
 @media (min-width: 820px) and (max-width: 1180px) {
-  .picture img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-  }
+  .picture {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  gap: 20px;
+  padding: 20px;
+}
+
 
  .text {
     max-width: 100%;
