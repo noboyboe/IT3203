@@ -176,8 +176,10 @@ p {
   gap: 20px;
   padding: 20px;
 }
-
-
+.reference {
+  text-align: center;
+  padding-left: 20px;
+}
  .text {
     max-width: 100%;
     padding: 10px;
