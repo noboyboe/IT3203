@@ -167,5 +167,21 @@ p {
   .vocab ul {
     padding-left: 10px;
   }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .picture {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 800px;
+}
+  
 }
 
