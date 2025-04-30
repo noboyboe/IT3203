@@ -12,6 +12,7 @@ body {
   align-items: center; 
   margin: 0;
   padding: 0;
+  height: 120vh;
   background-image: url('skybox.png');
   background-size: cover; 
   background-position: center center; 
@@ -91,6 +92,10 @@ p {
   padding: 20px
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .result {
   padding: 20px; 
 }
@@ -114,5 +119,44 @@ p {
   padding-left: 20px:
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+    font-size: 18px;
+  }
 
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
 
+  .tabbut {
+    font-size: 14px;
+    padding: 10px 12px;
+    width: 100%; /* stack buttons vertically */
+    display: block;
+    margin: 5px 0;
+  }
+
+  .vocab {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .table table {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
