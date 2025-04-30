@@ -119,127 +119,43 @@ p {
   padding-left: 20px:
 }
 
-@media (max-width: 768px) {
-    .header {
-    width: 100%;
-    max-width: 1400px;
-    background-color: skyblue;
-    padding: 30px;
-    border-radius: 0px;
-    text-align: center;
-    }
-  
-  body {
-    flex-direction: column;
-    align-items: center; 
-    margin: 0;
-    padding: 0;
-    height: 120vh;
-    background-image: url('skybox.png');
-    background-size: cover; 
-    background-position: center center; 
-    display: flex;
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 30px;
-    border-radius: 0px;
-    height: 100%;
-    width: 100%;  
-    max-width: 1400px;
-    text-align: center;
-    padding-top: 20px;
-    flex-grow: 1;
-  }
-  
-  .tabs {
-    width: 100%;
-    max-width: 1400px;
-    background-color: #666699; 
-    padding: 0px; 
-    text-align: center;
-  }
-  
-  .tabbut {
-    background-color: #666699;
-    border: none;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    margin: 1px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .tabbut:hover {
-    background-color: #9999ff;
-  }
-  
-  h1 {
-    text-align: center;
-    color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
-    margin: 1;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  .vocab {
-    text-align: left;
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 20px;
-  }
+@media screen and (max-width: 390px) {
+  .header,
+  .content,
+  .tabs,
   .footer {
-    margin-top: auto;
-    border: 1px solid black;
-    text-align: center;
-    background-color: #F0FFFF;
-    padding: 10px;
-    width: 100%;
-    max-width: 1400px;
+    padding: 15px;
+    max-width: 100%; /* Let it scale fully to screen width */
   }
-  
-  .table table, .table th, .table td {
-    margin-left: auto;
-    margin-right: auto;
-    width:60%;
-    border:1px solid black;
-    padding: 20px
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .result {
-    padding: 20px; 
-  }
-  
-  .picture {
-    display: flex;
-    align-items: flex-start; 
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-width: 800px;
-  }
-  
-  .reference {
-    text-align: left;
-    padding-left: 20px:
-  }
-  
 
+  .tabbut {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .picture {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+  }
+
+  .picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .table table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .vocab {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
 
