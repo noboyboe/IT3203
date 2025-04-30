@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center; 
   margin: 0;
-  padding: 30;
+  padding: 0;
   height: 120vh;
   background-image: url('skybox.png');
   background-size: cover; 
@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.8); 
-  padding: 0px;
+  padding: 30px;
   border-radius: 0px;
   height: 100%;
   width: 100%;  
