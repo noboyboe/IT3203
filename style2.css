@@ -114,57 +114,5 @@ p {
   padding-left: 20px:
 }
 
-@media screen and (max-width: 390px) {
-  .header,
-  .content,
-  .tabs,
-  .footer {
-    padding: 15px;
-    max-width: 100%;
-  }
 
-  .body {
-    flex-direction: column;
-    margin: 0;
-    font-family: "Lucida Console", "Courier New", monospace;
-    display: flex;
-  }
-
-  .tabbut {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .picture {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .picture img {
-    width: 100%;
-    height: auto;
-  }
-
-  .text {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .table table {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .vocab {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .table table, .table th, .table td {
-  margin-left: auto;
-  margin-right: auto;
-  width:60%;
-  border:1px solid black;
-  }
-}
 
