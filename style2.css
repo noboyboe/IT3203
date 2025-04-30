@@ -38,6 +38,8 @@ body {
 }
 
 .tabs {
+  width: 100%;
+  max-width: 1400px;
   background-color: #666699; 
   padding: 0px; 
   text-align: center;
