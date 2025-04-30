@@ -127,6 +127,10 @@ p {
     max-width: 100%;
   }
 
+  .body {
+    background-image: none;
+  }
+
   .tabbut {
     padding: 10px;
     font-size: 14px;
