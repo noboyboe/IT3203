@@ -71,8 +71,8 @@
         <!-- Pressing the submit button will reveal all of the answers and whether you got them correct or incorrect. -->
       <div id="subbut"><button type="button" onclick="checkAnswers()">Submit</button></div>
     </form>
-    
-      <div id="result" style="display:none;">
+      <div class="result">
+        <div id="result" style="display:none;">
             <h2>Your Score: <span id="score"></span>/5</h2>
             <div id="answer1"></div>
             <div id="answer2"></div>
@@ -82,6 +82,7 @@
             <p id="finalScore"></p>
           <!-- This restarts your quiz and hides the revealed answers. -->
             <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
       </div>
       <div class="footer">
         <p><b>Created by David Dinh</b></p>
