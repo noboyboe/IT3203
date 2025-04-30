@@ -3,6 +3,8 @@
   padding: 30px;
   border-radius: 0px;
   text-align: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 body {
