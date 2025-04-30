@@ -160,8 +160,14 @@ p {
   }
 
   .table table {
-    width: 100%;
-    font-size: 14px;
+    width: 90%;              
+    font-size: 12px;         
+    padding: 5px;           
+    margin: 0 auto;  
+
+  .table th, .table td {
+  padding: 8px;            
+  text-align: left;   
   }
 
   .vocab ul {
