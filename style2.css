@@ -82,6 +82,8 @@ p {
   text-align: center;
   background-color: #F0FFFF;
   padding: 10px 0;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .table table, .table th, .table td {
