@@ -120,46 +120,126 @@ p {
 }
 
 @media (max-width: 768px) {
-  .header {
-    padding: 15px;
-    font-size: 18px;
+    .header {
+    width: 100%;
+    max-width: 1400px;
+    background-color: skyblue;
+    padding: 30px;
+    border-radius: 0px;
+    text-align: center;
+    }
+  
+  body {
+    flex-direction: column;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    background-image: url('skybox.png');
+    background-size: cover; 
+    background-position: center center; 
+    display: flex;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
-
+  
   .content {
-    width: 100%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 30px;
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;  
+    max-width: 1400px;
+    text-align: center;
+    padding-top: 20px;
+    flex-grow: 1;
   }
-
+  
+  .tabs {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #666699; 
+    padding: 0px; 
+    text-align: center;
+  }
+  
   .tabbut {
-    font-size: 14px;
-    padding: 10px 12px;
-    width: 100%; /* stack buttons vertically */
-    display: block;
-    margin: 5px 0;
+    background-color: #666699;
+    border: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin: 1px;
+    cursor: pointer;
+    color: white;
   }
-
-  .vocab {
-    padding-left: 10px;
-    font-size: 14px;
+  
+  .tabbut:hover {
+    background-color: #9999ff;
   }
-
-  .table table {
-    width: 100%;
-  }
-
-  .footer {
-    font-size: 14px;
-    padding: 8px 0;
-  }
-
+  
   h1 {
-    font-size: 22px;
+    text-align: center;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 1;
   }
-
+  
   p {
     font-size: 16px;
   }
-}
-
+  
+  .vocab {
+    text-align: left;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 20px;
+  }
+  .footer {
+    margin-top: auto;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #F0FFFF;
+    padding: 10px;
+    width: 100%;
+    max-width: 1400px;
+  }
+  
+  .table table, .table th, .table td {
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    border:1px solid black;
+    padding: 20px
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .result {
+    padding: 20px; 
+  }
+  
+  .picture {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .reference {
+    text-align: left;
+    padding-left: 20px:
+  }
+  
 
 
