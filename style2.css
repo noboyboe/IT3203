@@ -170,7 +170,7 @@ p {
     
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .picture {
     flex-direction: column !important; 
     align-items: center !important;
