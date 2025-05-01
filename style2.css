@@ -170,17 +170,17 @@ p {
 
 @media (min-width: 820px) and (max-width: 1180px) {
   .picture {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;     
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    gap: 20px;
+    padding: 20px;
 }
-.reference {
-  text-align: center;
-  padding-left: 20px;
+  .reference {
+    text-align: center;
+    padding-left: 20px;
 }
- .text {
+  .text {
     max-width: 100%;
     padding: 10px;
   }
