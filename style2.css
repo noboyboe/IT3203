@@ -173,8 +173,15 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .picture {
-    flex-direction: column; 
-    align-items: center;
+    flex-direction: column !important;
+    align-items: center !important;
+    border: 2px dashed blue; /* Optional test border */
+  }
+
+  .text {
+    max-width: 100% !important;
+    padding: 10px !important;
+    text-align: center;
   }
 
   .picture img {
@@ -182,16 +189,6 @@ p {
     height: auto;
     max-width: 300px;
   }
-  .reference {
-    text-align: center;
-    padding-left: 20px;
-}
-  .text {
-    max-width: 100%;
-    padding: 10px;
-  }
-  
 }
 
-}
 
